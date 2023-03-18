@@ -1,0 +1,32 @@
+name: test
+
+on:
+  pull_request:
+    paths:
+      - src/**
+      - .github/workflows/test.yaml
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+      - .github/workflows/test.yaml
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+          cache-dependency-path: example-action/yarn.lock
+      - run: yarn
+      - run: yarn lint --fix
+      - run: yarn format
+      - run: yarn build
+      - uses: int128/update-generated-files-action@v2
