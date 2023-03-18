@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - src/**
+      - '*.json'
       - .github/workflows/test.yaml
   push:
     branches:
       - main
     paths:
       - src/**
+      - '*.json'
       - .github/workflows/test.yaml
 
 jobs:
@@ -24,7 +26,6 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-          cache-dependency-path: example-action/yarn.lock
       - run: yarn
       - run: yarn lint --fix
       - run: yarn format
