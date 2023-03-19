@@ -16,13 +16,14 @@ jobs:
       - run: yarn
       - run: yarn build
 
+      - uses: aquaproj/aqua-installer@v2.0.2
+        with:
+          aqua_version: v1.37.0
+
       # https://k6.io/docs/results-output/real-time/datadog/
       - uses: DataDog/agent-github-action@v1.3.1
         with:
           api_key: ${{ secrets.DATADOG_API_KEY }}
-      - uses: aquaproj/aqua-installer@v2.0.2
-        with:
-          aqua_version: v1.37.0
       - run: k6 run lib/http-get.js
         env:
           K6_OUT: statsd
