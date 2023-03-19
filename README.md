@@ -63,3 +63,7 @@ To send the metrics from GitHub Actions to Datadog,
 
 The workflow starts Datadog Agent by [DataDog/agent-github-action](https://github.com/DataDog/agent-github-action) and runs k6 with `stats` output.
 See https://k6.io/docs/results-output/real-time/datadog/ for details.
+
+Here is an example of metrics.
+
+<img width="970" alt="image" src="https://user-images.githubusercontent.com/321266/226154959-24f03266-2ec2-4cbd-8f2b-fffccbae8b0f.png">
