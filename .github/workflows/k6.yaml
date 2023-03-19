@@ -7,8 +7,6 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container:
-      image: grafana/k6
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
