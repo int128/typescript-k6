@@ -19,7 +19,7 @@ jobs:
       # https://k6.io/docs/results-output/real-time/datadog/
       - uses: DataDog/agent-github-action@v1.3.1
         with:
-          api-key: ${{ secrets.DATADOG_API_KEY }}
+          api_key: ${{ secrets.DATADOG_API_KEY }}
       - uses: aquaproj/aqua-installer@v2.0.2
         with:
           aqua_version: v1.37.0
