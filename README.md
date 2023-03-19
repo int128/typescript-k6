@@ -4,14 +4,17 @@ Write your [grafana/k6](https://k6.io) test with TypeScript, and run the test in
 
 ## Getting Started
 
-To run locally,
+### Run in GitHub Actions
+
+Create a pull request and then k6 will run.
+
+### Run locally
 
 ```console
 % yarn build
-yarn run v1.22.19
-$ tsc
-✨  Done in 1.06s.
+```
 
+```console
 % k6 run lib/http-get.js
 
           /\      |‾‾| /‾‾/   /‾‾/   
@@ -49,3 +52,14 @@ $ tsc
 running (06.2s), 00/10 VUs, 40 complete and 0 interrupted iterations
 default ✓ [======================================] 10 VUs  5s
 ```
+
+## Datadog k6 integration
+
+To send the metrics from GitHub Actions to Datadog,
+
+1. Create [an API key of Datadog](https://docs.datadoghq.com/account_management/api-app-keys/).
+2. Put the API key to the repository secret `DATADOG_API_KEY` in GitHub Actions.
+3. Enable [k6 integration](https://docs.datadoghq.com/integrations/k6/) in Datadog.
+
+The workflow starts Datadog Agent by [DataDog/agent-github-action](https://github.com/DataDog/agent-github-action) and runs k6 with `stats` output.
+See https://k6.io/docs/results-output/real-time/datadog/ for details.
