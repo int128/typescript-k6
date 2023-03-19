@@ -1,2 +1,51 @@
-# hello-k6
-Hello world with k6
+# typescript-k6 [![test](https://github.com/int128/typescript-k6/actions/workflows/test.yaml/badge.svg)](https://github.com/int128/typescript-k6/actions/workflows/test.yaml)
+
+Write your [grafana/k6](https://k6.io) test with TypeScript, and run the test in GitHub Actions.
+
+## Getting Started
+
+To run locally,
+
+```console
+% yarn build
+yarn run v1.22.19
+$ tsc
+✨  Done in 1.06s.
+
+% k6 run lib/http-get.js
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: lib/http-get.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 10 max VUs, 35s max duration (incl. graceful stop):
+           * default: 10 looping VUs for 5s (gracefulStop: 30s)
+
+
+     data_received..................: 515 kB 84 kB/s
+     data_sent......................: 7.3 kB 1.2 kB/s
+     http_req_blocked...............: avg=163.75ms min=2µs      med=6µs      max=837.54ms p(90)=574.72ms p(95)=808.75ms
+     http_req_connecting............: avg=9.28ms   min=0s       med=0s       max=69.39ms  p(90)=36.8ms   p(95)=55.81ms 
+     http_req_duration..............: avg=242.79ms min=177.42ms med=190.86ms max=340.26ms p(90)=331.36ms p(95)=339.38ms
+       { expected_response:true }...: avg=242.79ms min=177.42ms med=190.86ms max=340.26ms p(90)=331.36ms p(95)=339.38ms
+     http_req_failed................: 0.00%  ✓ 0        ✗ 40  
+     http_req_receiving.............: avg=314.87µs min=34µs     med=138.5µs  max=1.53ms   p(90)=751µs    p(95)=1.18ms  
+     http_req_sending...............: avg=42.59µs  min=9µs      med=20µs     max=550µs    p(90)=30µs     p(95)=60.64µs 
+     http_req_tls_handshaking.......: avg=134.72ms min=0s       med=0s       max=715.08ms p(90)=476.73ms p(95)=682.24ms
+     http_req_waiting...............: avg=242.43ms min=176.78ms med=190.8ms  max=340.16ms p(90)=331.15ms p(95)=339.19ms
+     http_reqs......................: 40     6.490733/s
+     iteration_duration.............: avg=1.4s     min=1.17s    med=1.32s    max=2.17s    p(90)=1.79s    p(95)=2.14s   
+     iterations.....................: 40     6.490733/s
+     vus............................: 4      min=4      max=10
+     vus_max........................: 10     min=10     max=10
+
+
+running (06.2s), 00/10 VUs, 40 complete and 0 interrupted iterations
+default ✓ [======================================] 10 VUs  5s
+```
