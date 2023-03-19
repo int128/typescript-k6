@@ -1,0 +1,22 @@
+name: k6
+
+on:
+  pull_request:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+      - run: yarn
+      - run: yarn build
+
+      - uses: aquaproj/aqua-installer@v2.0.2
+        with:
+          aqua_version: v1.37.0
+      - run: k6 run lib/http-get.js
