@@ -18,7 +18,7 @@ jobs:
 
       - uses: aquaproj/aqua-installer@v2.0.2
         with:
-          aqua_version: v2.2.1
+          aqua_version: v2.2.2
 
       # https://k6.io/docs/results-output/real-time/datadog/
       - uses: DataDog/agent-github-action@v1.3.1
