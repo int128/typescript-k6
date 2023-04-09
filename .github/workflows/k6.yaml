@@ -16,7 +16,7 @@ jobs:
       - run: yarn
       - run: yarn build
 
-      - uses: aquaproj/aqua-installer@v2.0.2
+      - uses: aquaproj/aqua-installer@v2.1.1
         with:
           aqua_version: v2.2.2
 
