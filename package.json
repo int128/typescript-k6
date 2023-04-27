@@ -7,7 +7,7 @@
     "lint": "eslint **/*.ts"
   },
   "dependencies": {
-    "@types/k6": "^0.43.2"
+    "@types/k6": "^0.44.0"
   },
   "devDependencies": {
     "@tsconfig/node18": "^1.0.1",
