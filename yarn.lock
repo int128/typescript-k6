@@ -74,10 +74,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@tsconfig/node18@^1.0.1":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@tsconfig/node18/-/node18-1.0.3.tgz#b14aed11bda116950a57fb5d223dd050e47f4fe1"
-  integrity sha512-RbwvSJQsuN9TB04AQbGULYfOGE/RnSFk/FLQ5b0NmDf5Kx2q/lABZbHQPKCO1vZ6Fiwkplu+yb9pGdLy1iGseQ==
+"@tsconfig/node18@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node18/-/node18-2.0.0.tgz#58b52430d00913dc26c4459fbc7f05396e47886a"
+  integrity sha512-uI/B0ShkiEwTk036pncXucVlj4y11EW6mycQvCEzC1PkR2TBvdQZ5Wf96dp+XXWAc70FEDfvwTqanoaDpP6rPw==
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"
