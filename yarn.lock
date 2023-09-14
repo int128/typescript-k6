@@ -102,9 +102,9 @@
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
 "@types/k6@^0.46.0":
-  version "0.46.2"
-  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.46.2.tgz#5b27de2aba666f0bbdc37f8812a64b2a9deb1535"
-  integrity sha512-T1LU04YzrmcsTVOtFFL0wn0TPzvX08XNbmUJAIziR0J+4HO3IwN4t/X20y16+qZY7Aac141lYWje6QIIrbmmKg==
+  version "0.46.3"
+  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.46.3.tgz#f2ab86875d33a8c5a00f39571229128d6ad0a32f"
+  integrity sha512-mIkpM4flyaavv0GNzKxSFoge9SIIO4JviJ8vN22OZYln99lnPUWB3+i9QFoTsTfYqK+ZbqoDTOPq95SSTdmhJA==
 
 "@types/node@^18.15.3":
   version "18.17.15"
@@ -112,9 +112,9 @@
   integrity sha512-2yrWpBk32tvV/JAd3HNHWuZn/VDN1P+72hWirHnvsvTGSqbANi+kSeuQR9yAHnbvaBvHDsoTdXV0Fe+iRtHLKA==
 
 "@types/semver@^7.5.0":
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.1.tgz#0480eeb7221eb9bc398ad7432c9d7e14b1a5a367"
-  integrity sha512-cJRQXpObxfNKkFAZbJl2yjWtJCqELQIdShsogr1d2MilP8dKD9TE/nEKHkJgUNHdGKCQaf9HbIynuV2csLGVLg==
+  version "7.5.2"
+  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.2.tgz#31f6eec1ed7ec23f4f05608d3a2d381df041f564"
+  integrity sha512-7aqorHYgdNO4DM36stTiGO3DvKoex9TQRwsJU6vMaFGyqpBA1MNZkz+PG3gaNUPpTAOYhT1WR7M1JyA3fbS9Cw==
 
 "@typescript-eslint/eslint-plugin@6.7.0":
   version "6.7.0"
