@@ -101,10 +101,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
-"@types/k6@^0.46.0":
-  version "0.46.3"
-  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.46.3.tgz#f2ab86875d33a8c5a00f39571229128d6ad0a32f"
-  integrity sha512-mIkpM4flyaavv0GNzKxSFoge9SIIO4JviJ8vN22OZYln99lnPUWB3+i9QFoTsTfYqK+ZbqoDTOPq95SSTdmhJA==
+"@types/k6@^0.47.0":
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/@types/k6/-/k6-0.47.0.tgz#8df914fa95e52cd72a48673c804be0a37ae477d7"
+  integrity sha512-maHj30n8FfS8YHL8XqGP+DYzxpURgOvsAUI35L2RSJ5BlhF9JggghnBXea6dAw4KJRJfa5hKCqGaDD/kmsrHdA==
 
 "@types/node@^18.15.3":
   version "18.18.4"
