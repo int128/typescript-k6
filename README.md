@@ -11,7 +11,7 @@ Create a pull request and then k6 will run.
 ### Run locally
 
 ```console
-% yarn build
+% pnpm build
 ```
 
 ```console
