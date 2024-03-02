@@ -17,7 +17,7 @@ on:
       - .github/workflows/test.yaml
 
 jobs:
-  check:
+  generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
