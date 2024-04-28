@@ -5,6 +5,7 @@
     "format": "prettier --write **/*.ts",
     "lint": "eslint ."
   },
+  "type": "module",
   "dependencies": {
     "@types/k6": "^0.50.0"
   },
