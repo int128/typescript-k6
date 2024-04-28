@@ -12,7 +12,7 @@
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.3",
     "@types/node": "^20.0.0",
-    "eslint": "8.57.0",
+    "eslint": "9.1.1",
     "prettier": "3.2.5",
     "typescript": "5.4.5",
     "typescript-eslint": "^7.7.1"
