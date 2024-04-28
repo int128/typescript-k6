@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@types/k6':
         specifier: ^0.50.0
-        version: 0.50.0
+        version: 0.50.1
     devDependencies:
       '@tsconfig/recommended':
         specifier: ^1.0.3
@@ -88,8 +88,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/k6@0.50.0':
-    resolution: {integrity: sha512-+KpsLr549oFSpr80Zk9lf9wsEgESYTYzGeBIlS6NnH4PBiqJuRk+xv3KSFfDOCD0ZHbhUsXMV7mEVhWLOzfzmw==}
+  '@types/k6@0.50.1':
+    resolution: {integrity: sha512-szGVf09jYCvZoaYZcNa8YaGwJFHOVlYUdLfEVXQLLG6RC/XtBqITDlDGbM8YOsnE5Sb6GlQzJGzSLR8eojhnEA==}
 
   '@types/node@20.12.7':
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
@@ -611,7 +611,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/k6@0.50.0': {}
+  '@types/k6@0.50.1': {}
 
   '@types/node@20.12.7':
     dependencies:
