@@ -13,7 +13,7 @@
     "@tsconfig/recommended": "^1.0.3",
     "@types/node": "^20.0.0",
     "eslint": "9.2.0",
-    "prettier": "3.2.5",
+    "prettier": "3.4.2",
     "typescript": "5.4.5",
     "typescript-eslint": "^8.0.0"
   },
