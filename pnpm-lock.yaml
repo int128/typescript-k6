@@ -14,7 +14,7 @@ importers:
     devDependencies:
       '@tsconfig/recommended':
         specifier: ^1.0.3
-        version: 1.0.6
+        version: 1.0.8
       '@types/node':
         specifier: ^20.0.0
         version: 20.12.12
@@ -84,8 +84,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@tsconfig/recommended@1.0.6':
-    resolution: {integrity: sha512-0IKu9GHYF1NGTJiYgfWwqnOQSlnE9V9R7YohHNNf0/fj/SyOZWzdd06JFr0fLpg1Mqw0kGbYg8w5xdkSqLKM9g==}
+  '@tsconfig/recommended@1.0.8':
+    resolution: {integrity: sha512-TotjFaaXveVUdsrXCdalyF6E5RyG6+7hHHQVZonQtdlk1rJZ1myDIvPUUKPhoYv+JAzThb2lQJh9+9ZfF46hsA==}
 
   '@types/k6@0.51.0':
     resolution: {integrity: sha512-xelcvFGPI4VYrV5ozADmRuFQBKmDqDRzxfHVuCDD1/firZiSQvTP0pntxHuYUSkRyL8I83kvABXUlnLYNT2VuA==}
@@ -594,7 +594,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@tsconfig/recommended@1.0.6': {}
+  '@tsconfig/recommended@1.0.8': {}
 
   '@types/k6@0.51.0': {}
 
