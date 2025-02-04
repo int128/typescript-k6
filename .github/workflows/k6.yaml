@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-      - run: corepack enable pnpm
+      - run: npm install -g pnpm@latest-10
       - run: pnpm i
       - run: pnpm build
 
