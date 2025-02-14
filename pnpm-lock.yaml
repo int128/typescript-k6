@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@types/k6':
-        specifier: ^0.54.0
-        version: 0.54.2
+        specifier: ^0.57.0
+        version: 0.57.0
     devDependencies:
       '@eslint/js':
         specifier: 9.20.0
@@ -122,8 +122,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/k6@0.54.2':
-    resolution: {integrity: sha512-B5LPxeQm97JnUTpoKNE1UX9jFp+JiJCAXgZOa2P7aChxVoPQXKfWMzK+739xHq3lPkKj1aV+HeOxkP56g/oWBg==}
+  '@types/k6@0.57.0':
+    resolution: {integrity: sha512-82wFNqZByg0edG3RMQBEMbWji8J6EXEPl7EH1pgXzbf9Y9uxWqkf6iIMCTTR6mG0WT0HpfM3t7I3u81H9Nrmew==}
 
   '@types/node@22.13.4':
     resolution: {integrity: sha512-ywP2X0DYtX3y08eFVx5fNIw7/uIv8hYUKgXoK8oayJlLnKcRfEYCxWMVE1XagUdVtCJlZT1AU4LXEABW+L1Peg==}
@@ -620,7 +620,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/k6@0.54.2': {}
+  '@types/k6@0.57.0': {}
 
   '@types/node@22.13.4':
     dependencies:
