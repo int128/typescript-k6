@@ -55,14 +55,21 @@ default ✓ [======================================] 10 VUs  5s
 
 ## Datadog k6 integration
 
+### Prepare
+
 To send the metrics from GitHub Actions to Datadog,
 
 1. Create [an API key of Datadog](https://docs.datadoghq.com/account_management/api-app-keys/).
 2. Put the API key to the repository secret `DATADOG_API_KEY` in GitHub Actions.
 3. Enable [k6 integration](https://docs.datadoghq.com/integrations/k6/) in Datadog.
 
-The workflow starts Datadog Agent by [DataDog/agent-github-action](https://github.com/DataDog/agent-github-action) and runs k6 with `stats` output.
-See https://k6.io/docs/results-output/real-time/datadog/ for details.
+### Run
+
+The workflow runs the test and exports the metrics to Datadog via OpenTelemetry.
+
+1. Start the Datadog Agent container.
+2. Run k6 with [OpenTelemetry output](https://grafana.com/docs/k6/latest/results-output/real-time/opentelemetry/).
+3. Datadog Agent sends the metrics to Datadog.
 
 Here is an example of metrics.
 
