@@ -15,9 +15,9 @@ jobs:
           DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
           DD_HOSTNAME: none
           # https://docs.datadoghq.com/opentelemetry/interoperability/otlp_ingest_in_the_agent/?tab=docker
-          DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_HTTP_ENDPOINT: 0.0.0.0:4318
+          DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_GRPC_ENDPOINT: 0.0.0.0:4317
         ports:
-          - 4318:4318
+          - 4317:4317
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -35,9 +35,7 @@ jobs:
         env:
           # https://grafana.com/docs/k6/latest/results-output/real-time/opentelemetry/
           K6_OUT: experimental-opentelemetry
-          K6_OTEL_EXPORTER_TYPE: http
-          K6_OTEL_HTTP_EXPORTER_INSECURE: true
-          K6_OTEL_HTTP_EXPORTER_ENDPOINT: localhost:4318
+          K6_OTEL_GRPC_EXPORTER_INSECURE: true
           K6_OTEL_METRIC_PREFIX: k6.
 
       # Wait for the Datadog Agent to flush the metrics.
