@@ -13,7 +13,6 @@ jobs:
         env:
           # https://docs.datadoghq.com/containers/docker/?tab=standard#environment-variables
           DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
-          DD_HOSTNAME: none
           # https://docs.datadoghq.com/opentelemetry/interoperability/otlp_ingest_in_the_agent/?tab=docker
           DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_GRPC_ENDPOINT: 0.0.0.0:4317
         ports:
