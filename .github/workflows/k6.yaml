@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     services:
-      dd-agent:
+      datadog-agent:
         image: datadog/agent:7.63.2
         env:
           # https://docs.datadoghq.com/containers/docker/?tab=standard#environment-variables
@@ -38,3 +38,4 @@ jobs:
           K6_OTEL_EXPORTER_TYPE: http
           K6_OTEL_HTTP_EXPORTER_INSECURE: true
           K6_OTEL_HTTP_EXPORTER_ENDPOINT: localhost:4318
+      - run: sleep 10
