@@ -3,4 +3,4 @@ registries:
     ref: v4.322.0 # renovate: depName=aquaproj/aqua-registry
 
 packages:
-  - name: grafana/k6@v0.51.0
+  - name: grafana/k6@v0.57.0

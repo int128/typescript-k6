@@ -7,6 +7,17 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    services:
+      dd-agent:
+        image: datadog/agent:7.63.2
+        env:
+          # https://docs.datadoghq.com/containers/docker/?tab=standard#environment-variables
+          DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+          DD_HOSTNAME: none
+          # https://docs.datadoghq.com/opentelemetry/interoperability/otlp_ingest_in_the_agent/?tab=docker
+          DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_HTTP_ENDPOINT: 0.0.0.0:4318
+        ports:
+          - 4318:4318
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,11 +31,10 @@ jobs:
         with:
           aqua_version: v2.45.0
 
-      # https://k6.io/docs/results-output/real-time/datadog/
-      - uses: DataDog/agent-github-action@v1.3.1
-        with:
-          api_key: ${{ secrets.DATADOG_API_KEY }}
       - run: k6 run lib/http-get.js
         env:
-          K6_OUT: statsd
-          K6_STATSD_ENABLE_TAGS: true
+          # https://grafana.com/docs/k6/latest/results-output/real-time/opentelemetry/
+          K6_OUT: experimental-opentelemetry
+          K6_OTEL_EXPORTER_TYPE: http
+          K6_OTEL_HTTP_EXPORTER_INSECURE: true
+          K6_OTEL_HTTP_EXPORTER_ENDPOINT: localhost:4318
