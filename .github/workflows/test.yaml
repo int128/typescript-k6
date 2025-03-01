@@ -31,4 +31,5 @@ jobs:
       - run: pnpm i
       - run: pnpm lint --fix
       - run: pnpm format
+      - run: pnpm build
       - uses: int128/update-generated-files-action@v2

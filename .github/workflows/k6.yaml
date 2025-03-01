@@ -21,18 +21,11 @@ jobs:
           - 4317:4317
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: .node-version
-      - run: npm install -g pnpm@latest-10
-      - run: pnpm i
-      - run: pnpm build
-
       - uses: aquaproj/aqua-installer@v3.1.1
         with:
           aqua_version: v2.45.0
 
-      - run: k6 run lib/http-get.js
+      - run: k6 run src/http-get.ts
         env:
           # https://grafana.com/docs/k6/latest/results-output/real-time/opentelemetry/
           K6_OUT: experimental-opentelemetry
