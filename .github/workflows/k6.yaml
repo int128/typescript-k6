@@ -9,12 +9,12 @@ jobs:
     timeout-minutes: 10
     services:
       datadog-agent:
-        image: datadog/agent:7.63.2
+        image: datadog/agent:7.63.2@sha256:5aeefba3eb0db1337dfb9ea26e075dbfce91e50d9a2c59b92733d738dab1a7b3
         env:
           # https://docs.datadoghq.com/containers/docker/?tab=standard#environment-variables
           DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
-          DD_HOSTNAME: github-actions
-          DD_ENV: ${{ github.ref }}
+          DD_HOSTNAME: github.com
+          DD_ENV: ${{ github.ref_name }}
           # https://docs.datadoghq.com/opentelemetry/interoperability/otlp_ingest_in_the_agent/?tab=docker
           DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_GRPC_ENDPOINT: 0.0.0.0:4317
         ports:
