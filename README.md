@@ -11,45 +11,41 @@ Create a pull request and then k6 will run.
 ### Run locally
 
 ```console
-% pnpm build
-```
+% k6 run src/http-get.ts
 
-```console
-% k6 run lib/http-get.js
+         /\      Grafana   /‾‾/
+    /\  /  \     |\  __   /  /
+   /  \/    \    | |/ /  /   ‾‾\
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/
 
-          /\      |‾‾| /‾‾/   /‾‾/   
-     /\  /  \     |  |/  /   /  /    
-    /  \/    \    |     (   /   ‾‾\  
-   /          \   |  |\  \ |  (‾)  | 
-  / __________ \  |__| \__\ \_____/ .io
+     execution: local
+        script: src/http-get.ts
+        output: -
 
-  execution: local
-     script: lib/http-get.js
-     output: -
-
-  scenarios: (100.00%) 1 scenario, 10 max VUs, 35s max duration (incl. graceful stop):
-           * default: 10 looping VUs for 5s (gracefulStop: 30s)
+     scenarios: (100.00%) 1 scenario, 10 max VUs, 35s max duration (incl. graceful stop):
+              * default: 10 looping VUs for 5s (gracefulStop: 30s)
 
 
-     data_received..................: 515 kB 84 kB/s
-     data_sent......................: 7.3 kB 1.2 kB/s
-     http_req_blocked...............: avg=163.75ms min=2µs      med=6µs      max=837.54ms p(90)=574.72ms p(95)=808.75ms
-     http_req_connecting............: avg=9.28ms   min=0s       med=0s       max=69.39ms  p(90)=36.8ms   p(95)=55.81ms 
-     http_req_duration..............: avg=242.79ms min=177.42ms med=190.86ms max=340.26ms p(90)=331.36ms p(95)=339.38ms
-       { expected_response:true }...: avg=242.79ms min=177.42ms med=190.86ms max=340.26ms p(90)=331.36ms p(95)=339.38ms
-     http_req_failed................: 0.00%  ✓ 0        ✗ 40  
-     http_req_receiving.............: avg=314.87µs min=34µs     med=138.5µs  max=1.53ms   p(90)=751µs    p(95)=1.18ms  
-     http_req_sending...............: avg=42.59µs  min=9µs      med=20µs     max=550µs    p(90)=30µs     p(95)=60.64µs 
-     http_req_tls_handshaking.......: avg=134.72ms min=0s       med=0s       max=715.08ms p(90)=476.73ms p(95)=682.24ms
-     http_req_waiting...............: avg=242.43ms min=176.78ms med=190.8ms  max=340.16ms p(90)=331.15ms p(95)=339.19ms
-     http_reqs......................: 40     6.490733/s
-     iteration_duration.............: avg=1.4s     min=1.17s    med=1.32s    max=2.17s    p(90)=1.79s    p(95)=2.14s   
-     iterations.....................: 40     6.490733/s
-     vus............................: 4      min=4      max=10
-     vus_max........................: 10     min=10     max=10
+     data_received..................: 504 kB 87 kB/s
+     data_sent......................: 7.3 kB 1.3 kB/s
+     http_req_blocked...............: avg=211.96ms min=2µs      med=6µs      max=856.16ms p(90)=844.27ms p(95)=855.71ms
+     http_req_connecting............: avg=47.51ms  min=0s       med=0s       max=196.59ms p(90)=190.64ms p(95)=192.15ms
+     http_req_duration..............: avg=201.2ms  min=184.74ms med=191.84ms max=379.63ms p(90)=197.48ms p(95)=207.26ms
+       { expected_response:true }...: avg=201.2ms  min=184.74ms med=191.84ms max=379.63ms p(90)=197.48ms p(95)=207.26ms
+     http_req_failed................: 0.00%  0 out of 40
+     http_req_receiving.............: avg=9.47ms   min=21µs     med=64µs     max=188.36ms p(90)=245.5µs  p(95)=10.08ms
+     http_req_sending...............: avg=34.69µs  min=5µs      med=16µs     max=513µs    p(90)=79.6µs   p(95)=87.44µs
+     http_req_tls_handshaking.......: avg=143.27ms min=0s       med=0s       max=587.26ms p(90)=573.75ms p(95)=575.04ms
+     http_req_waiting...............: avg=191.69ms min=184.57ms med=191.42ms max=198.19ms p(90)=196.22ms p(95)=196.87ms
+     http_reqs......................: 40     6.896836/s
+     iteration_duration.............: avg=1.41s    min=1.18s    med=1.19s    max=2.05s    p(90)=2.04s    p(95)=2.04s
+     iterations.....................: 40     6.896836/s
+     vus............................: 10     min=10      max=10
+     vus_max........................: 10     min=10      max=10
 
 
-running (06.2s), 00/10 VUs, 40 complete and 0 interrupted iterations
+running (05.8s), 00/10 VUs, 40 complete and 0 interrupted iterations
 default ✓ [======================================] 10 VUs  5s
 ```
 
