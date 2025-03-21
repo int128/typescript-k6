@@ -10,10 +10,10 @@
     "@types/k6": "^0.57.0"
   },
   "devDependencies": {
-    "@eslint/js": "9.22.0",
+    "@eslint/js": "9.23.0",
     "@tsconfig/recommended": "^1.0.3",
     "@types/node": "22.13.11",
-    "eslint": "9.22.0",
+    "eslint": "9.23.0",
     "pnpm": "10.6.5",
     "prettier": "3.5.3",
     "typescript": "5.8.2",
