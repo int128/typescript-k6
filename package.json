@@ -14,10 +14,10 @@
     "@tsconfig/recommended": "^1.0.3",
     "@types/node": "22.13.16",
     "eslint": "9.23.0",
-    "pnpm": "10.7.0",
+    "pnpm": "10.7.1",
     "prettier": "3.5.3",
     "typescript": "5.8.2",
     "typescript-eslint": "^8.0.0"
   },
-  "packageManager": "pnpm@10.7.0"
+  "packageManager": "pnpm@10.7.1"
 }
