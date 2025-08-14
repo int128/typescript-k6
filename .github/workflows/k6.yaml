@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 10
     services:
       datadog-agent:
-        image: datadog/agent:7.68.3@sha256:698ba8694a2961bc177990604df0e77fcb8d14b7c2a8a91ffd785982b55e9c6e
+        image: datadog/agent:7.69.0@sha256:dba7f35b2a3b1e872118b6a80f555aa2564bbf4d3ae3babc6fa54aeb7affb3c4
         env:
           # https://docs.datadoghq.com/containers/docker/?tab=standard#environment-variables
           DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
