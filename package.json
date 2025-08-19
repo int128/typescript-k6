@@ -7,7 +7,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@types/k6": "^0.57.0"
+    "@types/k6": "^1.0.0"
   },
   "devDependencies": {
     "@eslint/js": "9.33.0",
