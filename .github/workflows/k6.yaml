@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v5
       - uses: aquaproj/aqua-installer@v4.0.3
         with:
-          aqua_version: v2.53.9
+          aqua_version: v2.53.10
 
       - run: k6 run src/http-get.ts
         env:
