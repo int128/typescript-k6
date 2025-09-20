@@ -25,8 +25,8 @@ importers:
         specifier: 9.35.0
         version: 9.35.0
       pnpm:
-        specifier: 10.15.1
-        version: 10.15.1
+        specifier: 10.16.0
+        version: 10.16.0
       prettier:
         specifier: 3.6.2
         version: 3.6.2
@@ -467,8 +467,8 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  pnpm@10.15.1:
-    resolution: {integrity: sha512-NOU4wym1VTAUyo6PRTWZf5YYCh0PYUM5NXRJk1NQ2STiL4YUaCGRJk7DPRRirCFWGv+X9rsYBlNRwWLH6PbeZw==}
+  pnpm@10.16.0:
+    resolution: {integrity: sha512-gGbnsDQhe3AKmk27OgBQYdZBuhMKiZFSE6ELPKSRnBnAN77IBmr9xVm4ljX9uAaxbqZz8kaPuyiqv6E8U+P3aQ==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -1018,7 +1018,7 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  pnpm@10.15.1: {}
+  pnpm@10.16.0: {}
 
   prelude-ls@1.2.1: {}
 
