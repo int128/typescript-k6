@@ -19,8 +19,8 @@ importers:
         specifier: ^1.0.3
         version: 1.0.10
       '@types/node':
-        specifier: 22.17.1
-        version: 22.17.1
+        specifier: 22.18.8
+        version: 22.18.8
       eslint:
         specifier: 9.35.0
         version: 9.35.0
@@ -131,8 +131,8 @@ packages:
   '@types/k6@1.3.0':
     resolution: {integrity: sha512-YmxKxib8oyJJXeQXHOPtEra7tFNkjy2z7Pim9uqm+rUDX6Myt54BoFsKhZMC+x26DQMrPOJMaMsmzZKfuhGfNg==}
 
-  '@types/node@22.17.1':
-    resolution: {integrity: sha512-y3tBaz+rjspDTylNjAX37jEC3TETEFGNJL6uQDxwF9/8GLLIjW1rvVHlynyuUKMnMr1Roq8jOv3vkopBjC4/VA==}
+  '@types/node@22.18.8':
+    resolution: {integrity: sha512-pAZSHMiagDR7cARo/cch1f3rXy0AEXwsVsVH09FcyeJVAzCnGgmYis7P3JidtTUjyadhTeSo8TgRPswstghDaw==}
 
   '@typescript-eslint/eslint-plugin@8.45.0':
     resolution: {integrity: sha512-HC3y9CVuevvWCl/oyZuI47dOeDF9ztdMEfMH8/DW/Mhwa9cCLnK1oD7JoTVGW/u7kFzNZUKUoyJEqkaJh5y3Wg==}
@@ -656,7 +656,7 @@ snapshots:
 
   '@types/k6@1.3.0': {}
 
-  '@types/node@22.17.1':
+  '@types/node@22.18.8':
     dependencies:
       undici-types: 6.21.0
 
